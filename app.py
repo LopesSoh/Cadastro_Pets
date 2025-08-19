@@ -9,6 +9,7 @@ while resp1 != 0:
         limpar_e_pausar()
         menu_cadastro()
         tipo = int(input("--> "))
+        limpar_e_pausar()
 
         print("Preencha as informações do animal:")
         nome = input("Nome: ")
@@ -20,6 +21,9 @@ while resp1 != 0:
 
         cadastro(tipo, nome, peso, idade, raca, cor, dono)
         print("Cadastro realizado com sucesso!")
+
+
+        print(pets)
     
     else:
         print(" ")
