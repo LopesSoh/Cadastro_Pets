@@ -18,13 +18,14 @@ def limpar_e_pausar():
 def menu_cadastro():
     print("Selecione:\n 1-Gato \n 2-Cachorro \n 3-Passaro")
 
-def cadastro(tipo, nome, peso, idade, raca_ou_especie, cor, dono,):
+
+def cadastro(pets, tipo, nome, peso, idade, raca_ou_especie, cor, dono):
     global id_pets
     if tipo == 1:
-        pets[id_pets] = Gato(peso, idade, raca_ou_especie, cor, dono)
+        pets[id_pets] = Gato(nome, peso, idade, raca_ou_especie, cor, dono)
     elif tipo == 2:
-        pets[id_pets] = Cachorro(peso, idade, raca_ou_especie, cor, dono)
+        pets[id_pets] = Cachorro(nome, peso, idade, raca_ou_especie, cor, dono)
     elif tipo == 3:
-        pets[id_pets] = Passaro(peso, idade, raca_ou_especie, cor, dono)
-    id_pets =+ 1
+        pets[id_pets] = Passaro(nome, peso, idade, raca_ou_especie, cor, dono)
+    id_pets += 1
 
